@@ -23,9 +23,9 @@ require_once 'anotherfile.php'
 
 >las opciones `incluide_once` y `require_once` indican que el archivo solo debe incluir una sola vez en el caso se que trate de incluir en otro script.
 
-Con la llegada de los objectos a PHP se hizo necesario incluir los espacios de nombre `namespaces` que permiten que existan clases con el mismo nombre en sin que esto cree conflictos, también se creo una forma de hacer los include o require dinámicamente a partir de esos espacio de nombre de esa manera se enviaba tener que incluir los archivos y definir los namespaces que se fueran a usar.
+Con la llegada de los objectos a PHP se hizo necesario incluir los espacios de nombre `namespaces` que permite que existan clases con el mismo nombre sin que esto cree conflictos, también se creo una forma de hacer los include o require dinámicamente a partir de esos espacios de nombre de esa manera se evitaba tener que incluir los archivos y definir los namespaces que se fueran a usar.
 
-Y esto dio como inicio el primer PSR o [PSR-0](https://www.php-fig.org/psr/psr-0/) (ahora deprecated)  que dio la pauta para un carga de archivos a través de los namespaces. 
+Y esto dio como inicio el primer [PSR-0](https://www.php-fig.org/psr/psr-0/) (ahora deprecated)  que dio la pauta para un carga de archivos a través de los namespaces. 
 
 ### PSR-4 (PHP Standards Recommendations)
 
