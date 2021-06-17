@@ -1,0 +1,14 @@
+version: '3'
+services:
+  #Apache
+  httpd:
+    build: 
+      context: ./apache/
+    ports: 
+      - "80:80"
+    volumes: 
+      - ./src:/var/www/html
+  php-fpm:
+    image: php:7.4-fpm-alpine
+    volumes: 
+      - ./src:/var/www/html

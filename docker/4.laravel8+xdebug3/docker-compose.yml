@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  webserver:
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/html
+    extra_hosts:
+        - "host.docker.internal:host-gateway"
+    
+  php-fpm:
+    build: ./docker/php-fpm/
+    expose:
+      - 9000
+    volumes:
+      - .:/var/www/html
+    extra_hosts:
+        - "host.docker.internal:host-gateway"

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  nginx:
+    build: 
+      context: ./nginx/
+    ports: 
+      - "80:80"
+    volumes: 
+      - ./src:/var/www/html
+    networks: 
+      - backend
+  php-fpm:
+    image: php:7.4-fpm-alpine
+    volumes: 
+      - ./src:/var/www/html
+    networks: 
+      - backend
+networks: 
+  backend:
