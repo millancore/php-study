@@ -1,0 +1,33 @@
+
+#chat {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#message-list {
+    list-style: none;
+    padding: 0;
+}
+
+#message-list li {
+    background: #424242;
+    color: #ffffff;
+    padding: 7px 24px;
+    border-radius: 7px;
+    margin-bottom: 0.4em;
+    float: left;
+    clear: both;
+}
+
+#message-list .self {
+    background: #00695c;
+    text-align: right;
+    float: right;
+}
+
+#input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
